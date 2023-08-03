@@ -20,8 +20,8 @@ export default function PokemonClient() {
     return (
         <>
             <button onClick={() => setCount(count + 1)}>{count}</button>
-            <form onSubmit={handleSubmit}>
-                <input type="text" name="count" value={count} onChange={e => setCount(parseInt(e.target.value))}/>
+            <form action="/abc" onSubmit={handleSubmit}>
+                <input type="text" name="count"  value={count} onChange={e => setCount(parseInt(e.target.value))}/>
                 <input type="submit" value="Submit"/>
             </form>
         </>
