@@ -11,5 +11,7 @@ describe('Next.js pokemon page', () => {
 
   it('displays "Pokemon" heading', () => {
     cy.contains('Pokemon').should('exist')
+    cy.contains('Submit').click();
+    cy.contains('99').should('exist')
   })
 })
